@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MathApp.StartPage">
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Image Source="background1.jpg" Aspect="Fill" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4" Grid.ColumnSpan="4"/>
+            
+            <FlexLayout Direction="Column" AlignItems="Center" JustifyContent="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
+                <Label Text="Тренировочка" FontSize="82" TextColor="White" FontFamily="Lobster"/>
+            </FlexLayout>
+
+            <FlexLayout Direction="Column" JustifyContent="Center" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3">
+                <Button x:Name="play_button" Text="Играть" FontSize="36" HeightRequest="100" CornerRadius="20" Margin="10" Clicked="play_button_Clicked" FontFamily="Lobster"/>
+                <Button Text="Выйти" FontSize="36" HeightRequest="100" CornerRadius="20" Margin="10" Clicked="Button_Clicked_2" FontFamily="Lobster"/>
+            </FlexLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
