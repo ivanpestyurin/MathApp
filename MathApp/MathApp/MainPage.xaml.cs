@@ -25,7 +25,7 @@ namespace MathApp
             switch (action) // в зависимости от выбранного уровня сложности создаём объект класса Memory и передаем скольки значное число будем генерировать
             {
                 case "Легкий":
-                    game = new Memory(2, 3);
+                    game = new Memory(1, 3);
                     break;
                 case "Средний":
                     game = new Memory(1, 5);

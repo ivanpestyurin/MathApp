@@ -10,7 +10,6 @@ namespace MathApp
         public int Points { get; private set; } = 0; // очки
         public string CurrentNumber { get; private set; } // текущее загаданное число
         public int Level { get; private set; } // уровень сложности
-        //private int x = 1; // множитель очков
         private int minNumber;
         private int maxNumber;
         Random rand = new Random();
@@ -30,15 +29,12 @@ namespace MathApp
 
         public void AddPoints() // прибавляем очки, вызывается в случае правильного ответа
         {
-            //Points += 100 * x;
             Points += 100;
-            //x += 1;
         }
 
         public void SubtractPoints()
         {
             Points -= 100;
-            //x = 1;
         }
 
         public void SetRandomNumber() // устанавливаем рандомное число 
